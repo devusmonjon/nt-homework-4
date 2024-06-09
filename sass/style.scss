@@ -183,10 +183,6 @@ a {
 
 @media screen and (max-width: 1094px) {
     .products {
-        .container {
-            grid-template-columns: repeat(2, calc(50% - 4px));
-            padding: 0 10px;
-        }
         &__item {
             height: 512.88px;
             .img {
@@ -206,10 +202,26 @@ a {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 650px) {
     .products {
         &__item {
-            height: 470px;
+            height: 450px;
+            .img {
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .products {
+        .container {
+            grid-template-columns: repeat(1, calc(100%));
+        }
+        &__item {
+            .img {
+                height: 300px;
+            }
         }
     }
 }

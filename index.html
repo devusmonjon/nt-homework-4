@@ -54,8 +54,8 @@
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__link btn">
-                            Tasbeh
+                        <a href="counter.html" target="_blank" class="navbar__link btn">
+                            Counter
                         </a>
                     </li>
                 </ul>
@@ -227,6 +227,13 @@
             </div>
         </div>
     </section>
+
+    <script>
+        if (!localStorage.getItem("notified")) {
+            alert("Ustoz adashib tasbeh deb yozvorbman Counter edi");
+            localStorage.setItem("notified", true);
+        }
+    </script>
 </body>
 
 </html>
